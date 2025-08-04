@@ -1,0 +1,36 @@
+@page
+@model PriceQuotationApp.Pages.IndexModel
+@{
+    ViewData["Title"] = "Price Quotation";
+}
+
+<div class="price-quotation-container">
+    <h1>Price Quotation</h1>
+    
+    <form method="post">
+        <div class="form-group">
+            <label for="Subtotal">Subtotal:</label>
+            <input asp-for="PriceQuotation.Subtotal" class="form-control" id="Subtotal" />
+        </div>
+        
+        <div class="form-group">
+            <label for="DiscountPercent">Discount percent:</label>
+            <input asp-for="PriceQuotation.DiscountPercent" class="form-control" id="DiscountPercent" />
+        </div>
+        
+        <div class="form-group">
+            <label for="DiscountAmount">Discount amount:</label>
+            <input asp-for="PriceQuotation.DiscountAmount" class="form-control" id="DiscountAmount" readonly />
+        </div>
+        
+        <div class="form-group">
+            <label for="Total">Total:</label>
+            <input asp-for="PriceQuotation.Total" class="form-control" id="Total" readonly />
+        </div>
+        
+        <div class="button-group">
+            <button type="submit" name="action" value="calculate" class="btn btn-primary">Calculate</button>
+            <button type="submit" name="action" value="clear" class="btn btn-secondary">Clear</button>
+        </div>
+    </form>
+</div>
