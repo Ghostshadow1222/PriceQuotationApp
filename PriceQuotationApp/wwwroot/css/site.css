@@ -29,3 +29,83 @@ body {
 .form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
   text-align: start;
 }
+
+/* Price Quotation Styles */
+.price-quotation-container {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.price-quotation-container h1 {
+    color: #2c5aa0;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.form-group label {
+    width: 120px;
+    text-align: left;
+    margin-right: 10px;
+    margin-bottom: 0;
+    font-weight: normal;
+    color: #333;
+}
+
+.form-group input {
+    flex: 1;
+    padding: 5px 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+.form-group input[readonly] {
+    background-color: #f0f0f0;
+    color: #666;
+}
+
+.button-group {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.button-group .btn {
+    margin-right: 10px;
+    padding: 6px 12px;
+    font-size: 14px;
+    border-radius: 3px;
+}
+
+.btn-primary {
+    background-color: #0066cc;
+    border-color: #0066cc;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #0052a3;
+    border-color: #0052a3;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    border-color: #6c757d;
+    color: white;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268;
+    border-color: #5a6268;
+}
